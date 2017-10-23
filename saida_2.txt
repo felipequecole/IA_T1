@@ -1,0 +1,529 @@
+====	Busca em Largura	====
+> print(unlist(buscaEmLargura(inicial, objetivo)))
+[[1]]
+Vetor: ( B B B W W W E )
+G(n):  0 
+H(n):  Inf 
+F(n):  Inf 
+
+[[2]]
+Vetor: ( B B B W W E W )
+G(n):  1 
+H(n):  19 
+F(n):  Inf 
+
+[[3]]
+Vetor: ( B B E W W B W )
+G(n):  4 
+H(n):  17 
+F(n):  Inf 
+
+[[4]]
+Vetor: ( B B W W E B W )
+G(n):  6 
+H(n):  16 
+F(n):  Inf 
+
+[[5]]
+Vetor: ( B E W W B B W )
+G(n):  9 
+H(n):  13 
+F(n):  Inf 
+
+[[6]]
+Vetor: ( E B W W B B W )
+G(n):  10 
+H(n):  11 
+F(n):  Inf 
+
+[[7]]
+Vetor: ( W B W E B B W )
+G(n):  13 
+H(n):  11 
+F(n):  Inf 
+
+[[8]]
+Vetor: ( W B W W B B E )
+G(n):  16 
+H(n):  7 
+F(n):  Inf 
+
+[[9]]
+Vetor: ( W B W W E B B )
+G(n):  18 
+H(n):  6 
+F(n):  Inf 
+
+[[10]]
+Vetor: ( W E W W B B B )
+G(n):  21 
+H(n):  3 
+F(n):  Inf 
+
+> cat("====\tBusca em Profundidade\t=====\n")
+====	Busca em Profundidade	=====
+> print(unlist(buscaEmProfundidade(inicial, objetivo)))
+[[1]]
+Vetor: ( B B B W W W E )
+G(n):  0 
+H(n):  Inf 
+F(n):  Inf 
+
+[[2]]
+Vetor: ( B B B E W W W )
+G(n):  3 
+H(n):  21 
+F(n):  Inf 
+
+[[3]]
+Vetor: ( B E B B W W W )
+G(n):  5 
+H(n):  20 
+F(n):  Inf 
+
+[[4]]
+Vetor: ( B W B B E W W )
+G(n):  8 
+H(n):  17 
+F(n):  Inf 
+
+[[5]]
+Vetor: ( B W B B W E W )
+G(n):  9 
+H(n):  15 
+F(n):  Inf 
+
+[[6]]
+Vetor: ( B W E B W B W )
+G(n):  12 
+H(n):  15 
+F(n):  Inf 
+
+[[7]]
+Vetor: ( B W W B E B W )
+G(n):  14 
+H(n):  12 
+F(n):  Inf 
+
+[[8]]
+Vetor: ( B W W B B E W )
+G(n):  15 
+H(n):  11 
+F(n):  Inf 
+
+[[9]]
+Vetor: ( B W W B B W E )
+G(n):  16 
+H(n):  11 
+F(n):  Inf 
+
+[[10]]
+Vetor: ( B W W E B W B )
+G(n):  19 
+H(n):  11 
+F(n):  Inf 
+
+[[11]]
+Vetor: ( B W W W B E B )
+G(n):  21 
+H(n):  8 
+F(n):  Inf 
+
+[[12]]
+Vetor: ( B W W W E B B )
+G(n):  22 
+H(n):  7 
+F(n):  Inf 
+
+[[13]]
+Vetor: ( B E W W W B B )
+G(n):  25 
+H(n):  9 
+F(n):  Inf 
+
+[[14]]
+Vetor: ( E B W W W B B )
+G(n):  26 
+H(n):  7 
+F(n):  Inf 
+
+[[15]]
+Vetor: ( W B E W W B B )
+G(n):  28 
+H(n):  6 
+F(n):  Inf 
+
+[[16]]
+Vetor: ( W B W W E B B )
+G(n):  30 
+H(n):  6 
+F(n):  Inf 
+
+[[17]]
+Vetor: ( W B W W B E B )
+G(n):  31 
+H(n):  5 
+F(n):  Inf 
+
+[[18]]
+Vetor: ( W B E W B W B )
+G(n):  34 
+H(n):  9 
+F(n):  Inf 
+
+[[19]]
+Vetor: ( W B B W E W B )
+G(n):  36 
+H(n):  10 
+F(n):  Inf 
+
+[[20]]
+Vetor: ( W B B W B W E )
+G(n):  38 
+H(n):  12 
+F(n):  Inf 
+
+[[21]]
+Vetor: ( W B B E B W W )
+G(n):  41 
+H(n):  15 
+F(n):  Inf 
+
+[[22]]
+Vetor: ( W B B B E W W )
+G(n):  42 
+H(n):  13 
+F(n):  Inf 
+
+[[23]]
+Vetor: ( W B B B W E W )
+G(n):  43 
+H(n):  13 
+F(n):  Inf 
+
+[[24]]
+Vetor: ( W B E B W B W )
+G(n):  46 
+H(n):  13 
+F(n):  Inf 
+
+[[25]]
+Vetor: ( W B W B E B W )
+G(n):  48 
+H(n):  10 
+F(n):  Inf 
+
+[[26]]
+Vetor: ( W B W B B E W )
+G(n):  49 
+H(n):  9 
+F(n):  Inf 
+
+[[27]]
+Vetor: ( W B W B B W E )
+G(n):  50 
+H(n):  9 
+F(n):  Inf 
+
+[[28]]
+Vetor: ( W B W B E W B )
+G(n):  52 
+H(n):  8 
+F(n):  Inf 
+
+[[29]]
+Vetor: ( W E W B B W B )
+G(n):  55 
+H(n):  7 
+F(n):  Inf 
+
+[[30]]
+Vetor: ( W W E B B W B )
+G(n):  56 
+H(n):  5 
+F(n):  Inf 
+
+[[31]]
+Vetor: ( W W B E B W B )
+G(n):  57 
+H(n):  5 
+F(n):  Inf 
+
+[[32]]
+Vetor: ( W W B W B E B )
+G(n):  59 
+H(n):  4 
+F(n):  Inf 
+
+[[33]]
+Vetor: ( W W B W B B E )
+G(n):  60 
+H(n):  3 
+F(n):  Inf 
+
+[[34]]
+Vetor: ( W W B E B B W )
+G(n):  63 
+H(n):  9 
+F(n):  Inf 
+
+[[35]]
+Vetor: ( W W B B E B W )
+G(n):  64 
+H(n):  7 
+F(n):  Inf 
+
+[[36]]
+Vetor: ( W W B B W B E )
+G(n):  66 
+H(n):  6 
+F(n):  Inf 
+
+[[37]]
+Vetor: ( W W B E W B B )
+G(n):  69 
+H(n):  5 
+F(n):  Inf 
+
+[[38]]
+Vetor: ( W W E B W B B )
+G(n):  70 
+H(n):  3 
+F(n):  Inf 
+
+[[39]]
+Vetor: ( W W W B E B B )
+G(n):  72 
+H(n):  2 
+F(n):  Inf 
+
+> cat("====\tBusca de Custo Uniforme\t=====\n")
+====	Busca de Custo Uniforme	=====
+> print(unlist(buscaCustoUniforme(inicial, objetivo)))
+[[1]]
+Vetor: ( B B B W W W E )
+G(n):  0 
+H(n):  Inf 
+F(n):  Inf 
+
+[[2]]
+Vetor: ( B B B W W E W )
+G(n):  1 
+H(n):  19 
+F(n):  Inf 
+
+[[3]]
+Vetor: ( B B E W W B W )
+G(n):  4 
+H(n):  17 
+F(n):  Inf 
+
+[[4]]
+Vetor: ( B B W E W B W )
+G(n):  5 
+H(n):  15 
+F(n):  Inf 
+
+[[5]]
+Vetor: ( E B W B W B W )
+G(n):  8 
+H(n):  15 
+F(n):  Inf 
+
+[[6]]
+Vetor: ( W B E B W B W )
+G(n):  10 
+H(n):  12 
+F(n):  Inf 
+
+[[7]]
+Vetor: ( W B W B E B W )
+G(n):  12 
+H(n):  10 
+F(n):  Inf 
+
+[[8]]
+Vetor: ( W B W B W B E )
+G(n):  14 
+H(n):  8 
+F(n):  Inf 
+
+[[9]]
+Vetor: ( W B W E W B B )
+G(n):  17 
+H(n):  7 
+F(n):  Inf 
+
+[[10]]
+Vetor: ( W B W W E B B )
+G(n):  18 
+H(n):  5 
+F(n):  Inf 
+
+[[11]]
+Vetor: ( W E W W B B B )
+G(n):  21 
+H(n):  3 
+F(n):  Inf 
+
+> cat("====\tBusca Best-First (Gulosa)\t=====\n")
+====	Busca Best-First (Gulosa)	=====
+> print(unlist(buscaBestFirst(inicial, objetivo, "Gulosa")))
+[[1]]
+Vetor: ( B B B W W W E )
+G(n):  0 
+H(n):  Inf 
+F(n):  Inf 
+
+[[2]]
+Vetor: ( B B B W W E W )
+G(n):  1 
+H(n):  19 
+F(n):  19 
+
+[[3]]
+Vetor: ( B B E W W B W )
+G(n):  4 
+H(n):  17 
+F(n):  17 
+
+[[4]]
+Vetor: ( B B W E W B W )
+G(n):  5 
+H(n):  15 
+F(n):  15 
+
+[[5]]
+Vetor: ( B E W B W B W )
+G(n):  7 
+H(n):  14 
+F(n):  14 
+
+[[6]]
+Vetor: ( B W E B W B W )
+G(n):  8 
+H(n):  13 
+F(n):  13 
+
+[[7]]
+Vetor: ( E W B B W B W )
+G(n):  10 
+H(n):  12 
+F(n):  12 
+
+[[8]]
+Vetor: ( W E B B W B W )
+G(n):  11 
+H(n):  11 
+F(n):  11 
+
+[[9]]
+Vetor: ( W W B B E B W )
+G(n):  14 
+H(n):  9 
+F(n):  9 
+
+[[10]]
+Vetor: ( W W B B W B E )
+G(n):  16 
+H(n):  6 
+F(n):  6 
+
+[[11]]
+Vetor: ( W W B E W B B )
+G(n):  19 
+H(n):  5 
+F(n):  5 
+
+[[12]]
+Vetor: ( W W B W E B B )
+G(n):  20 
+H(n):  3 
+F(n):  3 
+
+[[13]]
+Vetor: ( W W E W B B B )
+G(n):  22 
+H(n):  2 
+F(n):  2 
+
+> cat("====\tBusca Best-First (A*)\t=====\n")
+====	Busca Best-First (A*)	=====
+> print(unlist(buscaBestFirst(inicial, objetivo, "AEstrela")))
+[[1]]
+Vetor: ( B B B W W W E )
+G(n):  0 
+H(n):  Inf 
+F(n):  Inf 
+
+[[2]]
+Vetor: ( B B B W W E W )
+G(n):  1 
+H(n):  19 
+F(n):  20 
+
+[[3]]
+Vetor: ( B B E W W B W )
+G(n):  4 
+H(n):  17 
+F(n):  21 
+
+[[4]]
+Vetor: ( B E B W W B W )
+G(n):  5 
+H(n):  15 
+F(n):  20 
+
+[[5]]
+Vetor: ( E B B W W B W )
+G(n):  6 
+H(n):  15 
+F(n):  21 
+
+[[6]]
+Vetor: ( W B B E W B W )
+G(n):  9 
+H(n):  13 
+F(n):  22 
+
+[[7]]
+Vetor: ( W B B W E B W )
+G(n):  10 
+H(n):  11 
+F(n):  21 
+
+[[8]]
+Vetor: ( W B B W W B E )
+G(n):  12 
+H(n):  10 
+F(n):  22 
+
+[[9]]
+Vetor: ( W B B W W E B )
+G(n):  13 
+H(n):  9 
+F(n):  22 
+
+[[10]]
+Vetor: ( W B E W W B B )
+G(n):  16 
+H(n):  7 
+F(n):  23 
+
+[[11]]
+Vetor: ( W B W E W B B )
+G(n):  17 
+H(n):  5 
+F(n):  22 
+
+[[12]]
+Vetor: ( W B W W E B B )
+G(n):  18 
+H(n):  5 
+F(n):  23 
+
+[[13]]
+Vetor: ( W E W W B B B )
+G(n):  21 
+H(n):  3 
+F(n):  24 
