@@ -26,7 +26,7 @@ Ops.Blocos = function(obj1,obj2){
 
 ## Sobrecarga da função genérica "print" do R
 print.Blocos <- function(obj) {
-  cat("Vetor: (", obj$desc, ")\n")
+  cat("Tabuleiro: (", obj$desc, ")\n")
   cat("G(n): ", obj$g, "\n")
   cat("H(n): ", obj$h, "\n")
   cat("F(n): ", obj$f, "\n")
